@@ -1,0 +1,53 @@
+/* -------- Posts -------- */
+
+.posts {
+  background-color: $bg-color-secondary;
+
+  // &__inner {
+  // }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media ($tablet) {
+      justify-content: space-between;
+      text-align: initial;
+    }
+  }
+
+  &__title {
+    @include h2();
+  }
+
+  &__all {
+    font-size: 1.6rem;
+    color: $link-color;
+    display: none;
+
+    @media ($tablet) {
+      display: initial;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+
+    @media ($tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+}
+
+/* -------- Posts -------- */

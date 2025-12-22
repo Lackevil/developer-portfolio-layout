@@ -1,0 +1,24 @@
+/* -------- Social -------- */
+
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+  }
+
+  // &__item {
+  // }
+
+  &__link {
+    & > svg path {
+      transition: 0.2s ease-in-out fill;
+    }
+
+    &:hover > svg path {
+      fill: $primary-color;
+    }
+  }
+}
+
+/* -------- Social -------- */

@@ -1,0 +1,66 @@
+/* -------- UI Kit -------- */
+
+// Imports
+
+@import "./utils";
+@import "./components";
+@import "./layout";
+
+// General
+
+body {
+  background-color: $bg-color-secondary;
+}
+
+.divider {
+  height: 50px;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+.ui__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+// Titles
+
+.h1 {
+  @include h1();
+}
+
+.h2 {
+  @include h2();
+}
+
+.h3 {
+  @include h3();
+}
+
+// Paragraph
+
+.p1 {
+  @include p1();
+}
+
+// Link
+
+.link {
+  @include link();
+  font-size: 1.6rem;
+}
+
+// Button
+
+.button {
+  @extend %button;
+}
+
+// Post
+
+/* -------- UI Kit -------- */

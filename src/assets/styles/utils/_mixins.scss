@@ -1,0 +1,89 @@
+/* -------- Mixins -------- */
+
+// Titles
+
+@mixin h1($color: $main-text) {
+  color: $color;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 125%;
+  text-align: center;
+
+  @media ($tablet) {
+    font-size: 4.4rem;
+    line-height: 136%;
+    text-align: initial;
+  }
+}
+
+@mixin h2($color: $main-text) {
+  color: $color;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 333%;
+  text-align: center;
+
+  @media ($tablet) {
+    font-size: 2.2rem;
+    line-height: 273%;
+    text-align: initial;
+  }
+}
+
+@mixin h3($color: $main-text, $text: 2.4rem, $height: 125%) {
+  color: $color;
+  font-weight: 700;
+  font-size: $text;
+  line-height: $height;
+
+  @media ($tablet) {
+    line-height: initial;
+  }
+}
+
+// Paragraph
+
+@mixin p1($color: $main-text, $size: 1.6rem) {
+  color: $color;
+  font-size: $size;
+  line-height: 1.6;
+}
+
+// Link
+
+@mixin link($color: $main-text) {
+  transition: 0.2s ease-in-out color;
+  color: $color;
+  font-weight: 500;
+  font-size: 2.5rem;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  @media ($tablet) {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
+
+// Button
+
+%button {
+  transition: 0.2s ease-in-out background-color;
+  border-radius: 0.2rem;
+  background-color: $primary-color;
+  padding: 1.2rem 2rem;
+  max-width: 20.8rem;
+  color: $bg-color-main;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: lighten($primary-color, $amount: 10);
+  }
+}
+
+/* -------- Mixins -------- */
