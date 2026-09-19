@@ -2,8 +2,6 @@
 
 A frontend practice project — a personal portfolio layout for a fictional developer, built with clean HTML structure and modular SCSS.
 
-**[→ Live Demo](https://lackevil.github.io/John-portfolio/)**
-
 ![John Portfolio Screenshot](screenshot.png)
 
 ---
